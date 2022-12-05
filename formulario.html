@@ -1,0 +1,53 @@
+<html>
+    <!--RESPEITAR A HIERARQUIA DAS TAGS-->
+    <!--ATRIBUTOS VÃO SEMPRE DENTRO DE TAGS (antes do > de declaração) -->
+    <head>
+        <title>primeiro formulario</title>
+     </head>
+    <body>
+        <!--Toda TAG deve ser aberta e fechada para melhor organização (A NAO SER QUE SEJA PARA QUEBRA DE LINHA)-->
+        <h1>MEU FORMULÁRIO</h1>
+            <form action="https://formspree.io/f/xknewqqw" method="post">
+            <!--Area para preenchimento simples sem alteração de sua dimensão (input)-->
+            <P>
+                <label><strong>Digite Seu Nome Completo</strong></label><br>
+                <input placeholder="digite aqui" type="text" required="required"  name="Digite seu Nome"></input><br>
+            </P>
+            <!--Area para preenchimento mutável com alteração da dimensão da caixa de resposta para o tamanho que preferir-->
+            <P>
+                <label><B>Digite uma observação</B></label><br>
+                <textarea rows="10" cols="30" placeholder="digite aqui"></textarea><br>
+            </P>
+            <p>
+                <label><b>Você vai se casar comigo:</b></label><br>
+                <ul>
+                    <li>
+                    <!--O NAME DEVE SER PADRAO ENTRE TODAS AS ESCOLHAS PARA QUE NAO HAJA DUPLA SELEÇÃO-->
+                        <input value="sim, casarei com voce" name="casacomigo" type="radio"> sim eu me caso com você
+                    </li> 
+                    <li>
+                        <input value="sim, vou me casar" name="casacomigo" type="radio"> sim, vou me casar com você
+                    </li>
+                    <li>
+                        <input value="eu me casarei com você sim" name="casacomigo" type="radio"> eu me casarei com você sim
+                    </li>
+                </ul>
+            </p>
+            <p>
+                <label>Escolha sua Cidade:</label>
+                <select>
+                    <!--SELECT tag mãe OPTION tag filha-->
+                    <option name="udi"value="udy">Uberlandia</option>
+                    <option name="udi"value="udy">Udy</option>
+                    <option name="udi"value="udy">Udy</option>
+                    <option name="udi"value="Uberlandia">Uberlandia</option>
+                    <option name="udi"value="udy">Uberlandia</option>
+                </select>
+            </p>
+            <p>
+            <input checked="checked" value="sim" name="termosdocontrato" type="checkbox"> Eu Li e aceito os termos de uso do seu corpinho gostoso
+            </p>
+                <button type="submit">Enviar</button>
+            </form>
+    </body>
+</html> 
